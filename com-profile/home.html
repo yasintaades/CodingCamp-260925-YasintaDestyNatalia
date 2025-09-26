@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perusahaan Kami</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="img/logo.jpg" class="logo-img">
+      <span>Laundry Express Sin</span>
+    </div>
+    <button id="menuToggle" class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about-company">Our Profile</a></li>
+      <li><a href="#cabang">Branch</a></li>
+      <li><a href="#message">Message Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Home -->
+<section id="home" class="section">
+  <div class="overlay"></div>
+  <div class="content-box">
+    <h1 id="welcomeMessage">Selamat Datang di Perusahaan Kami</h1>
+    <p>Anda pasti membutuhkan jasa laundry yang aman, bersih, terpercaya, dan cepat bukan?
+        Laundry Express Sin adalah jawaban dari keinginan Anda. Kami memastikan cucian kotor Anda sampai ke tujuan
+        dengan aman, bersih, dan tepat waktu. Selamat menikmati layanan.</p>
+    <a href="#about-company">
+      <button style="background-color:#0d9488;; color: #fff; border-radius: 5px; text-decoration: none; display: inline-block; padding: 10px 20px;">Lihat Lebih Lengkap</button>
+    </a>
+  </div>
+</section>
+
+  <!-- Tentang Perusahaan -->
+ <section id="about-company" class="about-company">
+  <!-- Overlay -->
+  <div class="overlay"></div>
+  <!-- Konten -->
+  <div class="content">
+    <h1>Siapa Kami?</h1>
+    <p>
+      Kami hadir untuk memberikan layanan laundry terbaik dengan cepat, aman, dan terpercaya.  
+      Dengan outlet yang tersebar di berbagai lokasi strategis, kami selalu berkomitmen untuk memberikan hasil terbaik untuk pelanggan kami.  
+      <br><b>Bersama kami, kebersihan dan kenyamanan Anda adalah prioritas utama.</b>
+    </p>
+    <a href="visi-misi.html" class="btn">Baca Selengkapnya</a>
+  </div>
+</section>
+
+  <!-- Portfolio -->
+ <section id="cabang" class="cabang-section">
+  <div class="content-box">
+  <h2>Cabang Kami</h2>
+  <p>Kami tersebar di berbagai kota untuk memberikan layanan terbaik.</p>
+  </div>
+
+  <div class="cabang-list">
+    <div class="cabang-item">
+      <img src="img/jakarta.jpeg" alt="Cabang Jakarta">
+      <h3>Cabang Jakarta</h3>
+      <p>Jl. Sudirman No. 45, Jakarta Pusat</p>
+    </div>
+
+    <div class="cabang-item">
+      <img src="img/Bogor.png" alt="Cabang Bogor">
+      <h3>Cabang Bogor</h3>
+      <p>Jl. Pajajaran No. 12, Bogor</p>
+    </div>
+
+    <div class="cabang-item">
+      <img src="img/depok.png" alt="Cabang Depok">
+      <h3>Cabang Depok</h3>
+      <p>Jl. Margonda Raya No. 88, Depok</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Message Us -->
+<section id="message" class="message-section">
+    <!-- Video Background -->
+    <div class="video-wrapper">
+      <video autoplay muted loop playsinline>
+        <source src="img/duid.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+    </div>
+
+    <!-- Konten -->
+    <div class="content-wrapper">
+      <div class="form-box">
+        <h1>Message Us</h1>
+        <p>Kami siap menerima pesan, kritik, dan saran Anda kapan saja.</p>
+        
+        <form id="messageForm">
+          <label for="name">Nama</label>
+          <input type="text" id="name" required>
+
+          <label for="dob">Tanggal Lahir</label>
+          <input type="date" id="dob" required>
+
+          <label for="gender">Jenis Kelamin</label>
+          <select id="gender" required>
+            <option value="">--Pilih--</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select>
+
+          <label for="userMessage">Pesan</label>
+          <textarea id="userMessage" rows="4" required></textarea>
+
+          <button type="submit">Kirim</button>
+        </form>
+
+        <!-- Box untuk menampilkan hasil -->
+        <div id="dataBox"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

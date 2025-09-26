@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+  <div class="login-wrapper">
+    
+    <!-- Left: Form -->
+    <div class="login-left">
+      <h2>Welcome</h2>
+      <p>Log in now to continue</p>
+      <form id="loginForm">
+        <input 
+          type="email" 
+          id="email" 
+          name="email"
+          placeholder="Email" 
+          required 
+        />
+        <input 
+          type="password" 
+          id="password" 
+          name="password"
+          placeholder="Password" 
+          required 
+        />
+        <button type="submit">Login</button>
+      </form>
+      <div class="forgot">
+        <!-- gunakan button atau <a href="javascript:void(0)"> agar tidak reload -->
+        <a href="javascript:void(0)" id="forgotPassword">Lupa Password?</a>
+      </div>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="login-right">
+      <img src="img/logo.jpg" alt="Company Logo">
+    </div>
+  </div>
+
+  <!-- Jika pakai EmailJS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
